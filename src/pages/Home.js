@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 import { Instagram, Phone, Calendar, Sparkles } from "lucide-react";
 import { Card, CardContent } from "../components/ui/Card";
 import { Button } from "../components/ui/Button";
-
+import makeupExample from "../assets/makeup-example.png";
+import urwahWorking from "../assets/urwah-working.png";
 export default function Home() {
     const [formData, setFormData] = useState({ name: "", date: "", message: "" });
     const [submitted, setSubmitted] = useState(false);
@@ -31,7 +32,7 @@ export default function Home() {
                     </motion.h1>
                     <p className="text-pink-600 text-lg mt-3">Where beauty meets artistry 💄✨</p>
                     <motion.img
-                        src="https://images.unsplash.com/photo-1585222515065-7c1f5c70b1f4"
+                        src={makeupExample}
                         alt="Makeup Example"
                         className="rounded-3xl shadow-lg mt-6 mx-auto w-full max-w-lg"
                         whileHover={{ scale: 1.03 }}
@@ -61,7 +62,7 @@ export default function Home() {
                                 Hello gorgeous! I'm <strong>Urwah</strong> – a certified and passionate makeup artist with a flair for soft glam, bold transformations, and radiant bridal looks. My mission is to help you feel like the most confident version of yourself for your big day or any day! Let’s bring out your inner glow ✨
                             </p>
                             <img
-                                src="https://images.unsplash.com/photo-1611858263712-b33e423ecafc"
+                                src={urwahWorking}
                                 alt="Urwah working"
                                 className="rounded-2xl mt-6 shadow-md w-full"
                             />
